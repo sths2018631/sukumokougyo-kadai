@@ -1,0 +1,66 @@
+header, nav, article, aside, section, footer {
+display:block;
+}
+
+
+#midasi{ /*あいうえお*/
+  font-size: 40px;
+}
+
+#koumoku{
+
+}
+
+
+
+
+
+#nav {  /*nav横並び*/
+  list-style: none;
+  overflow: hidden;
+}
+
+#nav li {
+  width: 140px;
+  text-align: center;
+  background-color: #6c2735;
+  float: left;
+}
+
+#nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  display:inline;
+} /*ここまで*/
+
+
+
+#wrapper {
+  display: flex;
+   height: 300px;
+}
+ #side {
+   width: 40%;
+}
+ #main {
+   width: 60%;
+   background-color: cadetblue;
+}
+
+
+
+<style> /*フェードイン・アウト*/
+.fade{
+
+  animation: fadein 0.2s ease 0.3s 1 normal
+}
+
+@keyframes fadeIn { /*animetion-nameで設定した値を書く*/
+
+  0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+
+  100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+
+}
+</style>  /*ここまで*/
